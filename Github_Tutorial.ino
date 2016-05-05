@@ -15,15 +15,17 @@ void setup()
 {
   Serial.begin(9600);
   Serial.println("Trimpot read example");
+  // veicu testu
 
   pinMode(A0, INPUT);
 }
 
 void loop() 
 {
-  // veicu testu
+  Int myValue = 0;
   myValue = analogRead(A0);
-  
+
+  Int zobs = 12;
   Serial.print("The value is: ");
   Serial.println(myValue);
 
